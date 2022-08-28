@@ -13,4 +13,4 @@ Console.WriteLine("Enter a y2");
 double y2 = Convert.ToDouble(Console.ReadLine());
 
 double v = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
-Console.WriteLine($"длинна вектора - {v}");
+Console.WriteLine($"расстояние между точками - {v}");
