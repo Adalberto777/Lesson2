@@ -4,23 +4,20 @@
 void WriteMassiv(int[] massive) //метод который заполняет массив
 {
     int lenght = massive.Length;
-    int index = 0;
-    while(index < lenght)
+    
+    for(int i = 0; i < lenght; i++)
     {
-        
-        massive[index] = new Random().Next(0,2); // наполняем массив случайными цифрами от 0 до 1 (2-1 так работает Next)
-        index++;
+        massive[i] = new Random().Next(0,2); // наполняем массив случайными цифрами от 0 до 1 (2-1 так работает Next)
     }
 }
 
 void PrintMassiv(int[] massiv) // метод который выводит массив
 {
     int lenght = massiv.Length;
-    int index = 0;
-    while(index < lenght)
+    
+    for(int i = 0; i < lenght; i++)
     {
-        Console.Write($"{massiv[index]}|");
-        index++;        
+        Console.Write($"{massiv[i]}|");
     }
 }
 
