@@ -1,5 +1,5 @@
 ﻿// Метод вычисления факториала
-int FactorialMenod(int number)
+double FactorialMenod(int number) //факториал функция быстрорастущая поэтому интджер после 17 переполяется луче для вывода использовать дабл
 {
     if(number == 1 || number ==0) return 1; // 1!=1 0!=1
     else return number * FactorialMenod(number - 1);
