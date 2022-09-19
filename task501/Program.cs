@@ -3,12 +3,12 @@ Console.WriteLine("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 Console.WriteLine($"{number} -> {SumNumbers(number)}");
 
-int SumNumbers(int number)
+int SumNumbers(int number1)
 {
-    if (number == 0)
+    if (number1 == 0)
     {
         return 0;
     }
-    return (number % 10 + SumNumbers(number / 10));
+    return (number1 % 10 + SumNumbers(number1 / 10));
 }
 
